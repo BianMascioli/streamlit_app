@@ -1,6 +1,8 @@
 import streamlit as st
 from langchain.llms import OpenAI
- 
+from langchain_community import OpenAI
+from langchain_community import llms  
+
 st.title('Quickstart App')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
