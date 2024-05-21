@@ -3,7 +3,7 @@ from langchain_community import llms
 from langchain_community.llms import OpenAI
 
 
-st.title('Quickstart App')
+st.title('App PPS')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
@@ -12,7 +12,7 @@ def generate_response(input_text):
     st.info(llm(input_text))
 
 with st.form('my_form'):
-    text = st.text_area('Enter text:', 'What are the three key pieces of advice for learning how to code?')
+    text = st.text_area('Enter text:', 'Enter text')
     submitted = st.form_submit_button('Submit')
     if not openai_api_key.startswith('sk-'):
         st.warning('Please enter your OpenAI API key!', icon='⚠')
