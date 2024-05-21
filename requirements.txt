@@ -1,4 +1,4 @@
 streamlit
 openai
 langchain
-lagchain_community
+langchain_community
